@@ -122,6 +122,9 @@ class MyApp extends StatelessWidget {
                                   width: 10,
                                 ),
                                 Container(
+                                  // width: 38.0,
+                                  width:
+                                      MediaQuery.of(context).size.width / 1.6,
                                   decoration: BoxDecoration(
                                       color: HexColor("#7bacbf"),
                                       borderRadius: BorderRadius.only(
@@ -131,13 +134,17 @@ class MyApp extends StatelessWidget {
                                       )),
                                   child: Padding(
                                     padding: const EdgeInsets.all(9.0),
-                                    child: Text(
-                                      snapshot.data.documents[index]
-                                          .data()['messagetext'],
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 14,
-                                          color: Colors.black),
+                                    child: Column(
+                                      children: [
+                                        Text(
+                                          snapshot.data.documents[index]
+                                              .data()['messagetext'],
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 14,
+                                              color: Colors.black),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ),

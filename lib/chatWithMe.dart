@@ -33,22 +33,6 @@ showaDialog(context) {
               Text('No one will know who is sending messages.',
                   style: TextStyle(fontSize: 12))
             ]),
-            Row(
-              children: [
-                Text('Our class teacher told me about this app that, ',
-                    style: TextStyle(fontSize: 12)),
-              ],
-            ),
-            Row(children: [
-              Text('"বাটাম ফাটায়ে দিবো কিন্তু".'),
-            ]),
-            Column(
-              children: [
-                Image.asset(
-                  'assets/images/ci.png',
-                ),
-              ],
-            ),
             Row(children: [Text('Thank you for using this app.')]),
             Row(
               children: [Text('24/7 Service')],
